@@ -188,12 +188,16 @@ const Contact = () => {
                   <h3 className="text-2xl font-bold text-dark-charcoal mb-4">
                     Our Location
                   </h3>
-                  <div className="bg-gray-200 h-64 rounded-lg flex items-center justify-center mb-4">
-                    <div className="text-center text-gray-600">
-                      <MapPin className="h-12 w-12 mx-auto mb-2" />
-                      <p>Interactive Map</p>
-                      <p className="text-sm">2/24 Ralph Black Dr, North Wollongong, NSW 2500</p>
-                    </div>
+                  <div className="mb-4 rounded-lg overflow-hidden h-64">
+                    <iframe
+                      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3291.7144873113025!2d150.8901779764613!3d-34.408602247221246!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6b131911d286e2d1%3A0x631d9fcffab9a5b8!2sUnit%202%2F24%20Ralph%20Black%20Dr%2C%20North%20Wollongong%20NSW%202500!5e0!3m2!1sen!2sau!4v1753674369530!5m2!1sen!2sau"
+                      width="100%"
+                      height="100%"
+                      style={{ border: 0 }}
+                      allowFullScreen=""
+                      loading="lazy"
+                      referrerPolicy="no-referrer-when-downgrade"
+                    ></iframe>
                   </div>
                   <div className="space-y-2 text-gray-600">
                     <p><strong>Address:</strong> 2/24 Ralph Black Dr, North Wollongong, NSW 2500</p>
