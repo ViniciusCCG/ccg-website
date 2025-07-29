@@ -4,17 +4,8 @@
     <loc>https://www.collaborativeconstructiongroup.com.au/</loc>
     <priority>1.00</priority>
   </url>
-  <loc>https://www.collaborativeconstructiongroup.com.au/about</loc>
-    <priority>0.90</priority>
-  </url>
   <url>
-    <loc>https://www.collaborativeconstructiongroup.com.au/services</loc>
-    <priority>0.90</priority>
-  </url>
-  <loc>https://www.collaborativeconstructiongroup.com.au/projects</loc>
-    <priority>0.90</priority>
-  </url>
-  <loc>https://www.collaborativeconstructiongroup.com.au/contact</loc>
+    <loc>https://www.collaborativeconstructiongroup.com.au/contact</loc>
     <priority>0.90</priority>
   </url>
 </urlset>
