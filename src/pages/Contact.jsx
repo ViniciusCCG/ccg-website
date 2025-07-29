@@ -106,7 +106,7 @@ const Contact = () => {
                   Send Us a Message
                 </h3>
                 <form
-                  action="https://formspree.io/f/xrblkyoy"
+                  action="https://formspree.io/f/xeozkrno"
                   method="POST"
                   className="space-y-6"
                 >
