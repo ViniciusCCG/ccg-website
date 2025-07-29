@@ -110,6 +110,10 @@ const Contact = () => {
                   method="POST"
                   className="space-y-6"
                 >
+                  <input type="hidden" name="_next" value="https://www.collaborativeconstructiongroup.com.au/" />
+                  <input type="hidden" name="_subject" value="New Contact Form Submission" />
+                  <input type="text" name="_gotcha" style={{ display: 'none' }} />
+
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="name">Full Name *</Label>
