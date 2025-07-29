@@ -9,7 +9,7 @@ function copySitemap() {
     name: 'copy-sitemap',
     closeBundle() {
       copyFileSync(
-        path.resolve(__dirname, 'src/static/sitemap.xml'),
+        path.resolve(__dirname, 'src/static/sitemap.text.xml'),
         path.resolve(__dirname, 'dist/sitemap.xml')
       );
     }
