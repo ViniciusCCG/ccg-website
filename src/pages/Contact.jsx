@@ -1,44 +1,12 @@
-import { useState } from 'react'
-import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react'
-import { Button } from '../components/ui/button'
-import { Card, CardContent } from '../components/ui/card'
-import { Input } from '../components/ui/input'
-import { Textarea } from '../components/ui/textarea'
-import { Label } from '../components/ui/label'
+import { Phone, Mail, MapPin, Clock, Send } from 'lucide-react';
+import { Button } from '../components/ui/button';
+import { Card, CardContent } from '../components/ui/card';
+import { Input } from '../components/ui/input';
+import { Textarea } from '../components/ui/textarea';
+import { Label } from '../components/ui/label';
 import { heroBanner } from '../assets';
 
 const Contact = () => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    phone: '',
-    projectType: '',
-    location: '',
-    message: ''
-  })
-
-  const handleInputChange = (e) => {
-    const { name, value } = e.target
-    setFormData(prev => ({
-      ...prev,
-      [name]: value
-    }))
-  }
-
-  const handleSubmit = (e) => {
-    e.preventDefault()
-    console.log('Form submitted:', formData)
-    alert('Thank you for your message! We will get back to you soon.')
-    setFormData({
-      name: '',
-      email: '',
-      phone: '',
-      projectType: '',
-      location: '',
-      message: ''
-    })
-  }
-
   const contactInfo = [
     {
       icon: Phone,
@@ -64,20 +32,20 @@ const Contact = () => {
       details: 'Mon-Fri: 7AM-5PM, Sat: 8AM-2PM',
       description: 'Sunday by appointment only'
     }
-  ]
+  ];
 
   const serviceAreas = [
     'Greater Sydney Metropolitan Area',
     'Wollongong and Illawarra Region',
     'Central Coast',
     'Regional NSW (project-dependent)'
-  ]
+  ];
 
   return (
     <div className="min-h-screen">
       {/* Hero Section */}
       <section className="relative h-96 flex items-center justify-center">
-        <div 
+        <div
           className="absolute inset-0 bg-cover bg-center bg-no-repeat"
           style={{ backgroundImage: `url(${heroBanner})` }}
         >
@@ -137,25 +105,29 @@ const Contact = () => {
                 <h3 className="text-2xl font-bold text-dark-charcoal mb-6">
                   Send Us a Message
                 </h3>
-                <form onSubmit={handleSubmit} className="space-y-6">
+                <form
+                  action="https://formspree.io/f/xrblkyoy"
+                  method="POST"
+                  className="space-y-6"
+                >
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="name">Full Name *</Label>
-                      <Input id="name" name="name" type="text" required value={formData.name} onChange={handleInputChange} className="mt-1" />
+                      <Input id="name" name="name" type="text" required className="mt-1" />
                     </div>
                     <div>
                       <Label htmlFor="email">Email Address *</Label>
-                      <Input id="email" name="email" type="email" required value={formData.email} onChange={handleInputChange} className="mt-1" />
+                      <Input id="email" name="email" type="email" required className="mt-1" />
                     </div>
                   </div>
                   <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                       <Label htmlFor="phone">Phone Number</Label>
-                      <Input id="phone" name="phone" type="tel" value={formData.phone} onChange={handleInputChange} className="mt-1" />
+                      <Input id="phone" name="phone" type="tel" className="mt-1" />
                     </div>
                     <div>
                       <Label htmlFor="projectType">Project Type</Label>
-                      <select id="projectType" name="projectType" value={formData.projectType} onChange={handleInputChange} className="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md focus:outline-none focus:ring-2 focus:ring-company-gold focus:border-transparent">
+                      <select id="projectType" name="projectType" className="mt-1 w-full px-3 py-2 border border-gray-300 rounded-md">
                         <option value="">Select Project Type</option>
                         <option value="residential">Residential</option>
                         <option value="commercial">Commercial</option>
@@ -167,11 +139,11 @@ const Contact = () => {
                   </div>
                   <div>
                     <Label htmlFor="location">Project Location</Label>
-                    <Input id="location" name="location" type="text" value={formData.location} onChange={handleInputChange} className="mt-1" placeholder="City, Suburb, or Address" />
+                    <Input id="location" name="location" type="text" placeholder="City, Suburb, or Address" className="mt-1" />
                   </div>
                   <div>
                     <Label htmlFor="message">Project Details *</Label>
-                    <Textarea id="message" name="message" required value={formData.message} onChange={handleInputChange} className="mt-1" rows={6} placeholder="Please describe your project requirements, timeline, and any specific details..." />
+                    <Textarea id="message" name="message" required rows={6} placeholder="Please describe your project requirements, timeline, and any specific details..." className="mt-1" />
                   </div>
                   <Button type="submit" className="w-full bg-company-gold hover:bg-company-gold/90 text-dark-charcoal font-semibold">
                     <Send className="mr-2 h-4 w-4" />
@@ -245,7 +217,7 @@ const Contact = () => {
         </div>
       </section>
     </div>
-  )
-}
+  );
+};
 
 export default Contact;
