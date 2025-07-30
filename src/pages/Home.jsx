@@ -71,7 +71,7 @@ const Home = () => {
             Building Excellence Across New South Wales
           </h1>
           <p className="text-xl md:text-2xl mb-8 max-w-3xl mx-auto">
-            Your trusted partner for turnkey home builds, bespoke renovations and reliable maintenance across Sydney and beyond.
+            Your trusted partner for turnkey builds, bespoke renovations and reliable maintenance across Sydney and beyond.
           </p>
           <p className="text-lg mb-8 max-w-2xl mx-auto">
             Founded in 2023, Collaborative Construction Group delivers comprehensive construction services with a hands-on approach and unwavering commitment to quality. From residential renovations to commercial fit-outs, we bring your vision to life with professional expertise and transparent communication.
