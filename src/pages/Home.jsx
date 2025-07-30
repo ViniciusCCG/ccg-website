@@ -11,9 +11,9 @@ import fitnessImage from '../assets/gym-interior.jpg'
 const Home = () => {
   const services = [
     {
-      title: 'Residential Construction',
-      description: 'Transform your home with our expert residential services. From custom new builds to complete renovations, we deliver quality craftsmanship tailored to your lifestyle and budget.',
-      image: residentialImage,
+      title: 'Specialized Expertise',
+      description: 'With particular strength in fitness industry construction, we bring specialized knowledge to unique requirements, delivering solutions that exceed expectations.',
+      image: fitnessImage,
       link: '/services'
     },
     {
@@ -23,15 +23,15 @@ const Home = () => {
       link: '/services'
     },
     {
-      title: 'Maintenance & Repairs',
-      description: 'Keep your property in peak condition with our preventative maintenance and rapid-response repair services. We ensure your investment remains protected year-round.',
-      image: maintenanceImage,
+      title: 'Residential Construction',
+      description: 'Transform your home with our expert residential services. From custom new builds to complete renovations, we deliver quality craftsmanship tailored to your lifestyle and budget.',
+      image: residentialImage,
       link: '/services'
     },
     {
-      title: 'Specialized Expertise',
-      description: 'With particular strength in fitness industry construction, we bring specialized knowledge to unique project requirements, delivering solutions that exceed expectations.',
-      image: fitnessImage,
+      title: 'Maintenance & Repairs',
+      description: 'Keep your property in peak condition with our preventative maintenance and rapid-response repair services. We ensure your investment remains protected year-round.',
+      image: maintenanceImage,
       link: '/services'
     }
   ]
