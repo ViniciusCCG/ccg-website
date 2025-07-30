@@ -4,14 +4,13 @@ import { Menu, X, Phone, Mail } from 'lucide-react'
 import { Button } from './ui/button'
 import collaborativeLogo from '../assets/CollaborativeTransparent.png';
 
-
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false)
   const location = useLocation()
 
   const navigation = [
     { name: 'Home', href: '/' },
-    { name: 'About', href: '/about' },
+    { name: 'About Us', href: '/about' },
     { name: 'Services', href: '/services' },
     { name: 'Projects', href: '/projects' },
     { name: 'Contact', href: '/contact' },
@@ -50,9 +49,9 @@ const Navbar = () => {
             <Link to="/" className="flex items-center">
               <img 
                 src={collaborativeLogo}
-                alt="Logo"
+                alt="Collaborative Construction Group logo"
                 className="h-16 w-auto max-w-[200px] object-contain"
-                />
+              />
             </Link>
           </div>
 
@@ -125,4 +124,3 @@ const Navbar = () => {
 }
 
 export default Navbar
-
