@@ -141,7 +141,7 @@ const About = () => {
                   <img
                     src={steveImg}
                     alt="Steve Grant"
-                    className="w-full md:w-60 h-auto rounded-lg object-cover"
+                    className="w-full md:w-60 h-auto rounded-lg object-cover border border-gray-200 bg-white"
                   />
                   <div>
                     <h3 className="text-2xl font-bold text-dark-charcoal mb-2">
