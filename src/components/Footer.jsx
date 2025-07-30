@@ -12,7 +12,7 @@ const Footer = () => {
               COLLABORATIVE CONSTRUCTION GROUP
             </h3>
             <p className="text-gray-300 mb-4 max-w-md">
-              Your trusted partner for turnkey home builds, bespoke renovations and reliable maintenance across Sydney and beyond. Founded in 2023, we deliver comprehensive construction services with a hands-on approach and unwavering commitment to quality.
+              Your trusted partner for turnkey builds, bespoke renovations and reliable maintenance across Sydney and beyond. Founded in 2023, we deliver comprehensive construction services with a hands-on approach and unwavering commitment to quality.
             </p>
             <div className="flex space-x-4">
               <a
