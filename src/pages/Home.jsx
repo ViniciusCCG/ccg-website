@@ -7,6 +7,7 @@ import residentialImage from '../assets/residential-construction.jpg'
 import commercialImage from '../assets/commercial-office-fitout.jpeg'
 import maintenanceImage from '../assets/construction-maintenance.jpeg'
 import fitnessImage from '../assets/gym-interior.jpg'
+import { Helmet } from 'react-helmet'
 
 const Home = () => {
   const services = [
@@ -57,6 +58,12 @@ const Home = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Collaborative Construction Group | Sydney Construction Experts</title>
+        <meta name="description" content="Collaborative Construction Group specialises in high-quality residential builds, commercial fit-outs and gym construction projects throughout Sydney and NSW." />
+        <link rel="canonical" href="https://www.collaborativeconstructiongroup.com.au/" />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="relative h-screen flex items-center justify-center">
         <div 
@@ -205,4 +212,3 @@ const Home = () => {
 }
 
 export default Home
-

@@ -9,6 +9,8 @@ import emfFitnessErinaFair from "../assets/emf-fitness-erina-fair.jpg";
 import taishoRestaurant from "../assets/taisho-restaurant.jpg";
 import afLogo from "../assets/af-logo-featured.png";
 import commercialConcept from "../assets/commercial-concept-featured.jpg";
+import { Helmet } from 'react-helmet'
+
 const Projects = () => {
   const [activeFilter, setActiveFilter] = useState('all')
 
@@ -68,6 +70,11 @@ const Projects = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Project Portfolio | Collaborative Construction Group</title>
+        <meta name="description" content="Explore our portfolio of gym builds, restaurant fit-outs, and commercial construction projects across NSW. See why top fitness brands trust our work." />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="relative h-96 flex items-center justify-center">
         <div 
@@ -248,4 +255,3 @@ const Projects = () => {
 }
 
 export default Projects
-

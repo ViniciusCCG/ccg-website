@@ -9,6 +9,7 @@ import maintenanceImage from "../assets/construction-maintenance-2.jpg";
 import fitnessImage from "../assets/fitness-construction-2.jpg";
 import housesfromtop from "../assets/houses-from-top.jpg";
 import pilates from "../assets/pilates-room.jpg";
+import { Helmet } from 'react-helmet'
 
 const Services = () => {
   const mainServices = [
@@ -93,6 +94,11 @@ const Services = () => {
 
   return (
     <div className="min-h-screen">
+      <Helmet>
+        <title>Construction Services | Collaborative Construction Group</title>
+        <meta name="description" content="Explore our residential, commercial, and fitness industry construction services across NSW. We build, renovate, and maintain with excellence." />
+      </Helmet>
+
       {/* Hero Section */}
       <section className="relative h-96 flex items-center justify-center">
         <div 
@@ -270,4 +276,4 @@ const Services = () => {
   )
 }
 
-export default Services;
+export default Services

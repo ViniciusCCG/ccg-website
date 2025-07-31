@@ -6,6 +6,8 @@ import { Input } from '../components/ui/input'
 import { Textarea } from '../components/ui/textarea'
 import { Label } from '../components/ui/label'
 import { heroBanner } from '../assets';
+import { Helmet } from 'react-helmet'
+
 
 const Quote = () => {
   const [formData, setFormData] = useState({
